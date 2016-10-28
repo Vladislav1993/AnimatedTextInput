@@ -19,8 +19,4 @@ DESC
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'AnimatedTextInput/'
-
-  s.resource_bundles = {
-    'AnimatedTextInput' => ['AnimatedTextInput/Assets/*.*']
-  }
 end
