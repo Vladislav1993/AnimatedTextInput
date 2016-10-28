@@ -13,7 +13,7 @@ DESC
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Victor Baro' => 'fs.baro@gmail.com' }
-  s.source           = { :git => 'https://github.com/jobandtalent/AnimatedTextInput.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Vladislav1993/AnimatedTextInput.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/jobandtalentEng'
 
   s.ios.deployment_target = '8.0'
