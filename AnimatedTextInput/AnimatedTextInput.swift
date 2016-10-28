@@ -52,7 +52,7 @@ public class AnimatedTextInput: UIControl {
     private let lineView = AnimatedLine()
     private let placeholderLayer = CATextLayer()
     private let counterLabel = UILabel()
-    private let lineWidth: CGFloat = 1
+    private let lineWidth: CGFloat = 2
     private let counterLabelRightMargin: CGFloat = 15
     private let counterLabelTopMargin: CGFloat = 5
 
