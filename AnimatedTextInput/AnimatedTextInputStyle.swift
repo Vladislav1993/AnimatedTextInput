@@ -21,7 +21,7 @@ public struct AnimatedTextInputStyleBlue: AnimatedTextInputStyle {
 
     public let activeColor = UIColor(red: 0.0/255.0, green: 118.0/255.0, blue: 255.0/255.0, alpha: 1.0)
     public let inactiveColor = UIColor.grayColor().colorWithAlphaComponent(0.5)
-    public let lineInactiveColor = UIColor(red: 0.0/255.0, green: 118.0/255.0, blue: 255.0/255.0, alpha: 1.0)
+    public let lineInactiveColor = UIColor.grayColor().colorWithAlphaComponent(0.2)
     public let errorColor = UIColor(red: 236.0/255.0, green: 13.0/255.0, blue: 0.0/255.0, alpha: 1.0)
     public let textInputFont = UIFont.systemFontOfSize(16)
     public let textInputFontColor = UIColor.blackColor()
