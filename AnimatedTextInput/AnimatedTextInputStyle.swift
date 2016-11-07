@@ -25,7 +25,7 @@ public struct AnimatedTextInputStyleBlue: AnimatedTextInputStyle {
     public let errorColor = UIColor(red: 236.0/255.0, green: 13.0/255.0, blue: 0.0/255.0, alpha: 1.0)
     public let textInputFont = UIFont.systemFontOfSize(16)
     public let textInputFontColor = UIColor.blackColor()
-    public let placeholderMinFontSize: CGFloat = 9
+    public let placeholderMinFontSize: CGFloat = 12
     public let counterLabelFont: UIFont? = UIFont.systemFontOfSize(9)
     public let leftMargin: CGFloat = 0
     public let topMargin: CGFloat = 10
