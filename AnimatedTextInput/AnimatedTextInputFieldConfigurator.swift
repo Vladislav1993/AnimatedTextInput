@@ -1,16 +1,17 @@
 import UIKit
 
 public struct AnimatedTextInputFieldConfigurator {
-
+    
     public enum AnimatedTextInputType {
         case standard
         case password
         case numeric
         case selection
         case multiline
+        case email
         case generic(textInput: TextInput)
     }
-
+    
     static func configure(with type: AnimatedTextInputType) -> TextInput {
         switch type {
         case .standard:
@@ -23,6 +24,8 @@ public struct AnimatedTextInputFieldConfigurator {
             return AnimatedTextInputSelectionConfigurator.generate()
         case .multiline:
             return AnimatedTextInputMultilineConfigurator.generate()
+        case .email:
+            return AnimatedTextInputEmailConfigurator.generate()
         case .generic(let textInput):
             return textInput
         }
@@ -91,5 +94,15 @@ private struct AnimatedTextInputMultilineConfigurator {
         textView.backgroundColor = UIColor.clearColor()
         textView.scrollEnabled = false
         return textView
+    }
+}
+
+private struct AnimatedTextInputEmailConfigurator {
+    
+    static func generate() -> TextInput {
+        let textField = AnimatedTextField()
+        textField.clearButtonMode = .WhileEditing
+        textField.keyboardType = .EmailAddress
+        return textField
     }
 }
