@@ -36,7 +36,6 @@ private struct AnimatedTextInputTextConfigurator {
 
     static func generate() -> TextInput {
         let textField = AnimatedTextField()
-        textField.clearButtonMode = .WhileEditing
         return textField
     }
 }
@@ -68,7 +67,6 @@ private struct AnimatedTextInputNumericConfigurator {
 
     static func generate() -> TextInput {
         let textField = AnimatedTextField()
-        textField.clearButtonMode = .WhileEditing
         textField.keyboardType = .DecimalPad
         return textField
     }
@@ -101,7 +99,6 @@ private struct AnimatedTextInputEmailConfigurator {
     
     static func generate() -> TextInput {
         let textField = AnimatedTextField()
-        textField.clearButtonMode = .WhileEditing
         textField.keyboardType = .EmailAddress
         return textField
     }
