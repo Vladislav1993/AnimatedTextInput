@@ -20,13 +20,13 @@ public protocol AnimatedTextInputStyle {
 public struct AnimatedTextInputStyleBlue: AnimatedTextInputStyle {
 
     public let activeColor = UIColor(red: 0.0/255.0, green: 118.0/255.0, blue: 255.0/255.0, alpha: 1.0)
-    public let inactiveColor = UIColor.grayColor().colorWithAlphaComponent(0.5)
-    public let lineInactiveColor = UIColor.grayColor().colorWithAlphaComponent(0.2)
+    public let inactiveColor = UIColor.gray.withAlphaComponent(0.5)
+    public let lineInactiveColor = UIColor.gray.withAlphaComponent(0.2)
     public let errorColor = UIColor(red: 236.0/255.0, green: 13.0/255.0, blue: 0.0/255.0, alpha: 1.0)
-    public let textInputFont = UIFont.systemFontOfSize(16)
-    public let textInputFontColor = UIColor.blackColor()
+    public let textInputFont = UIFont.systemFont(ofSize: 16)
+    public let textInputFontColor = UIColor.black
     public let placeholderMinFontSize: CGFloat = 12
-    public let counterLabelFont: UIFont? = UIFont.systemFontOfSize(9)
+    public let counterLabelFont: UIFont? = UIFont.systemFont(ofSize: 9)
     public let leftMargin: CGFloat = 0
     public let topMargin: CGFloat = 10
     public let rightMargin: CGFloat = 0
